@@ -33,21 +33,6 @@ font-family: 'Roboto', sans-serif;
     width: 801px;
     height: 523px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .Container {
     width: 1169px;
     margin: 0 auto;
@@ -71,8 +56,10 @@ font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-style: dotted;
-    border-right-color: #3D37F1;
+    border: 2px;
+    border-style: solid;
+    border-color: #3D37F1;
+    transition: 300ms linear;
 
 }
 .read2 {
@@ -83,6 +70,11 @@ font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px;
+    border-style: solid;
+    border-color: #3D37F1;
+    transition: 300ms linear;
+    
 }
 .Text-section h3 {
     color: #5A5454;
@@ -148,6 +140,44 @@ background-color: #FBBA77;
     font-size: 22px;
     font-family: 'Lato', sans-serif;
 }
-.image :hover {
-    color: sienna;
+.read2:hover {
+    background-color:#FBBA77;
+    color: crimson;
+}
+.read1:hover {
+    background-color: chocolate;
+    color: crimson;
+}
+
+@media (max-width: 1402px) 
+{
+    .line2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .line1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .read {
+        flex-direction: column;
+        align-items: center;
+        vertical-align: middle;
+    }
+    .container1 {
+        margin-bottom: 30px;
+    }
+    .Photo {
+        vertical-align: middle;
+    }
+    .Block {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px)
+{
+   .Block {
+       width: 100%; 
+   }
 }
